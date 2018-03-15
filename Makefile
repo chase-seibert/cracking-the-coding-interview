@@ -8,4 +8,4 @@ new:
 	@read slug; cp template.py ctci-$$slug.py
 	git status
 count:
-	@ls -l *.py |wc -l
+	@ls -1 |grep ctci |sed -e 's/\..*//' |uniq |wc -l

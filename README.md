@@ -29,6 +29,11 @@ d = dict(f=0, o=1, b=3)
 d.items() == [('b', 3), ('o', 1), ('f', 0)]
 ```
 
+### Sets
+
+- Declare: `{1, 2, 3}`  
+- Union: `{1, 2, 3} | {4, }`, but use `results = set(); results.add()`
+
 ### Types
 
 ```python
@@ -55,7 +60,19 @@ if type(foo) == list
 sorted([{'k':2}, {'k':3}, {'k':1}], key=lambda x: x.get('k'), reverse=False)
 ```
 
+### Binary
+
+- Int to binary string: `bin(10) == '0b1010'`, `bin(10)[2:] == '1010'`.
+- Binary string to int: `int('11111111', 2)`.
+
+But be careful - the results are not fixed width!
+
 ## Data Structures
+
+### Matrix
+
+- Don't use x/y for variable names. Use row and column.
+- Remember that `m[row][col]` is the right order.
 
 ### Stacks/Queues
 

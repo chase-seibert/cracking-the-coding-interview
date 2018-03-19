@@ -75,4 +75,12 @@ sorted([{'k':2}, {'k':3}, {'k':1}], key=lambda x: x.get('k'), reverse=False)
   first search from each one in parallel.
 - It's common to need to track whether a node has been visited in a graph.
 - For some problems it may be expedient to model a graph as a hash table of
-  edges. 
+  edges.
+
+## Algorithms
+
+### Recursion / Dynamic Programming
+
+- Recursion - bottom up, top down, half and half
+- To get big-O, draw a tree with number of nodes
+- DP == recursion + memoization

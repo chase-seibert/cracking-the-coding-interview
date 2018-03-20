@@ -33,6 +33,8 @@ d.items() == [('b', 3), ('o', 1), ('f', 0)]
 
 - Declare: `{1, 2, 3}`  
 - Union: `{1, 2, 3} | {4, }`, but use `results = set(); results.add()`
+- Don't try to declare a set with stuff in it with `set((1, 2), )`, use
+  `{(1, 2), }`.
 
 ### Types
 

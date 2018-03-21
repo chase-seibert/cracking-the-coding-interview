@@ -6,12 +6,16 @@ Run latest: `make`
 
 ## Python Tricks
 
+- Max int = `sys.maxsize`
+
 ### Slices
 
 ```python
 "foobar"[:1] == "f"
 "foobar"[1:] == "oobar"
 ```
+
+- Copy a list: `new_list = old_list[:]`
 
 ### Dicts
 

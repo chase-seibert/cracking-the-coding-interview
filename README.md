@@ -107,3 +107,51 @@ But be careful - the results are not fixed width!
 - Recursion - bottom up, top down, half and half
 - To get big-O, draw a tree with number of nodes
 - DP == recursion + memoization
+
+## System Design / Architecture
+
+QUAD DC: Questions, Use Cases, Assumptions, Diagram, Database, Caching.
+
+- Ask lots of clarifying questions - call out assumptions.
+- Call out tradeoffs
+- Validate any concerns raised, make changes.
+- Touch on database schema, network diagram, scale up, caching.
+- Specify API calls and request/response formats. 
+
+### Tools
+
+- Redis/Memcache
+- Async workers
+- Database sharding/NoSQL
+- MapReduce
+- WebSockets
+- Pre-computation
+- Eventual consistency
+- Scale up vs scale out
+
+## Considerations
+
+- Availability/single points of failure
+- Read vs. write load
+- Data size, throughput requirements
+- Identify bottlenecks
+
+## Database Schema
+
+Acronym: PUNIF
+
+- Primary key
+- Unique constraints
+- Nullable
+- Indexes
+- Foreign keys
+
+Other stuff:
+
+- Normalized/denormalized
+- Common: id/uuid, created_at, last_modified
+
+Standard reasons to use a relational DB:
+
+- Flexibility for future requirements.
+- Standard backup, redundancy.

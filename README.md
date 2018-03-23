@@ -7,6 +7,13 @@ Run latest: `make`
 ## Python Tricks
 
 - Max int = `sys.maxsize`
+- Binary search:
+
+```python
+import bisect
+lst = [1, 2, 3, 4, 5]
+assert bisect.bisect_left(lst, 3, start=None, end=None) == 2
+```
 
 ### Slices
 
@@ -116,7 +123,7 @@ QUAD DC: Questions, Use Cases, Assumptions, Diagram, Database, Caching.
 - Call out tradeoffs
 - Validate any concerns raised, make changes.
 - Touch on database schema, network diagram, scale up, caching.
-- Specify API calls and request/response formats. 
+- Specify API calls and request/response formats.
 
 ### Tools
 

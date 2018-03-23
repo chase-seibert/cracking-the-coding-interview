@@ -4,6 +4,11 @@ Install: `brew install python3`
 New: `make new`
 Run latest: `make`
 
+## Numbers to know
+
+- 256M ints in a GB (int is 4 bytes, GB is 1024M bytes)
+- 1GB == 8B bits (one huge bit vector)
+
 ## Python Tricks
 
 - Max int = `sys.maxsize`

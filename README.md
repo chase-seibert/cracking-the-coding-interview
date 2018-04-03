@@ -6,13 +6,21 @@ Run latest: `make`
 
 ## Numbers to know
 
+- 2^10 == 1KB
+- 2^20 == 1MB
+- 2^30 == 1GB
+- 2^40 == 1TB
 - 256M ints in a GB (int is 4 bytes, GB is 1024M bytes)
 - 1GB == 8B bits (one huge bit vector)
 
 ## Python Tricks
 
-- Max int = `sys.maxsize`
-- Binary search:
+### Getting Started
+
+- New env: `python3 -m venv venv`.
+- Max int: `sys.maxsize`
+
+### Binary Search
 
 ```python
 import bisect
